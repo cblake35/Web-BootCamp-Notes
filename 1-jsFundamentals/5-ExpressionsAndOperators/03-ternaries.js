@@ -24,5 +24,3 @@ x < 10 ? console.log("x is less than 10") :
 console.log("x equals 10!");
 
 
-
-

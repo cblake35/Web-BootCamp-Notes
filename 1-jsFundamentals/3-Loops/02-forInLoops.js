@@ -1,12 +1,12 @@
 /* For In Loops */
 
-// for in does no require that the thing you loop through be numbered
+// for in does not require that the thing you loop through be numbered
 
 let student = {name: "Peter", awesome: true, degree: "javascript", week:1};
 
-for (item in student){
+for (let item in student){ //writing "let" is not required, writing "for (item in student)..." works the same exact way
     console.log(item);
-    console.log(student[item]);
+    console.log(student[item]); //grabs value
 }
 
 let catArray = ["tabby", "birtish shorthair", "burmese", "maine coon", "rag doll"];
@@ -21,7 +21,7 @@ for (let cat in catArray){
 let instructor = "paul";
 let capName;
 
-for (n in instructor){
+for (let n in instructor){
     if (n == 0 ){
         capName = instructor[n].toUpperCase();
     } else {
