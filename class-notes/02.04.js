@@ -26,12 +26,13 @@ let myPet = "Ghost"; //let is block scoped
 
 sayHello();
 function sayHello() {
-    console.log(`This is a function declaration`); //function declaration is hoisted
+    console.log(`This is a function declaration`); //function declaration is hoisted; will work even if function is initialized/called before 
+                                                     // function declaration
 }
 
-
+func();
 let func = function() {
-    console.log(`This is a function expression`); //function expressions is NOT hoisted
+    console.log(`This is a function expression`); //function expressions is NOT hoisted; will not work like above
 }
 
 //Scope
