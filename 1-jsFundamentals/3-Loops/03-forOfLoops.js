@@ -5,8 +5,9 @@
 let student = {name:"Peter", isAwesome: true, degree: "javascript", week: 1};
 
 for (item of student) {
-    console.log(item);
+    console.log(item); //will throw an error, because object are not iterable
 }
+
 // for of grabs the actual value; for in grabs the key(index)
 
 let catArray = ["tabby", "birtish shorthair", "burmese", "maine coon", "rag doll"];
