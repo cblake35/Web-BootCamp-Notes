@@ -1,6 +1,7 @@
 /* For Of Loops */
 
-// of requires that your "thing" that your looping through is iterable which means it needs to be numbered. doesnt work for objects since objects key/value pair are not numbered
+// of requires that your "thing" that your looping through is iterable which means it needs 
+// to be numbered. doesnt work for objects since objects key/value pair are not numbered
 
 let student = {name:"Peter", isAwesome: true, degree: "javascript", week: 1};
 
