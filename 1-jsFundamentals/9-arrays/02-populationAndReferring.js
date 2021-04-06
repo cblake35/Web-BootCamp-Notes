@@ -54,9 +54,10 @@ console.log(movies);
 movies.splice(2, 0, 'Batman'); //if second param is 0, no elements will be removed
 console.log(movies);
 
-movies.forEach(movie => console.log(movie)); //check all elements within the array
+movies.forEach(movie => console.log(movie)); //check all elements within the array(movie can be anything, 
+// represents the items within the array)
 
-//lets do the followin with an array
+//lets do the following with an array
 //check if we're working with an array
 // flip the values within the array(i.e. what was in index 4 is now in 0, 3 to 1, etc.)
 //using a method only, lets print the values of the newly arranged array
@@ -65,6 +66,6 @@ let arr = new Array(1, 2, 3, 4, 5);
 
 if (arr instanceof Array){ //*remember -- checks if the object is an array - typeOf doesnt work with an array
     let revArr = arr.reverse(); //reverse() is a method that reverses the elements of an array
-    revArr.forEach(numbers=> console.log(numbers));
+    revArr.forEach(numbers => console.log(numbers));
 }
 
