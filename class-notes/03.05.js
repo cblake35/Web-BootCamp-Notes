@@ -111,6 +111,7 @@ are containers for named values called properties or methods.
     - .property
     - .method()
     - associative arrays(each property is associated with a string value)
+    - can't use arrow functions within the object
 */
 
 //define JS object with an object literal
@@ -142,13 +143,13 @@ console.log(client);
 
 
 
-// let manager = {
-//     firstName: 'Brad',
-//     lastName: 'Titus',
-//     birthYear: 1990,
-//     calcAge: function(){
-//         return 2021 - this.birthYear;
-//     }
-// }
+let manager = {
+    firstName: 'Brad',
+    lastName: 'Titus',
+    birthYear: 1990,
+    calcAge: function(birthYear){
+        return 2021 - birthYear;
+    }
+}
 
-// console.log(manager.calcAge());
+console.log(manager.calcAge());
